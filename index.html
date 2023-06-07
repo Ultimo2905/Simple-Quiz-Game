@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Quiz Game">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Volodymyr Kotorazhuk">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="img/1111.png" alt="logo">
+                    <div class="logo__content">
+                        <h1 id="progress">
+                            Questions
+                        </h1>
+                        <p>Answer correctly and get a reward</p>
+                    </div>
+
+                </div>
+            </header>
+            <main id="main">
+                <div class="heading">
+                    <p id="question">
+                    </p>
+                </div>
+                <hr id="line_break">
+                <div class="answers">
+                    <div class="answers-btn">
+                        <div class="row">
+                            <div class="col">
+                                <div class="btn">
+                                    <button id="optiona" class="opt">
+                                        <span id="choice0"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="btn">
+                                    <button id="optionb" class="opt">
+                                        <span id="choice1"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="btn">
+                                    <button id="optionc" class="opt">
+                                        <span id="choice2"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="btn">
+                                    <button id="optiond" class="opt">
+                                        <span id="choice3"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <span id="left"> <a href="index.html">reload</a> </span>
+            <!-- <span id="previous"> <a href="">previous</a> </span> -->
+            <p>Total Score : <span id="score"></span></p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

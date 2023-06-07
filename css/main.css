@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none !important
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: white;
+
+}
+
+.wrapper {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, #16c8f5, #1ac4f3, #8e6ad6);
+}
+
+.container {
+    padding: 1em 2em 0 2em;
+    flex: 1 1 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 100px;
+}
+
+main .heading {
+    color: white;
+    padding-top: 2em;
+}
+
+
+main .heading p {
+    margin: 0.4em 0;
+}
+
+.logo__content {
+    margin-left: 30px;
+}
+
+.logo__content h1 {
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 1em;
+    color: rgb(251, 251, 251);
+    filter: drop-shadow(4px 4px 6px gray);
+
+}
+
+.logo__content p {
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 0.9em;
+    color: rgb(251, 251, 251);
+    margin-top: 0.4rem;
+}
+
+main .heading p {
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 0.9em;
+}
+
+#line_break {
+    border: 1px solid #f9f9f92f;
+    width: 100%;
+    margin: auto;
+}
+
+.answers {
+    margin: 2em 0;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.col {
+    width: 50%;
+}
+
+.btn {
+    margin: 0 20px;
+}
+
+.btn button {
+    color: #1e9ac0;
+    border: none;
+    text-align: center;
+    padding: 0.6em;
+    width: 100%;
+    border-radius: 0.7em;
+    margin: 0.5em 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #ffffff;
+    filter: drop-shadow(4px 4px 6px gray);
+}
+
+.correct {
+    background-color: #10e910 !important;
+}
+
+.wrong {
+    background-color: rgb(215, 11, 11) !important;
+}
+
+footer {
+    width: 100%;
+    background-color: #5834a0;
+    height: 5rem;
+    color: #ffffff;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.result {
+    margin: auto;
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+    line-height: 2em;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .row {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .logo__content h1 {
+        font-size: 2em;
+
+    }
+
+    .logo img {
+        max-width: 50px;
+    }
+}
